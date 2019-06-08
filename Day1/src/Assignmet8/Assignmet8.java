@@ -5,6 +5,7 @@ public class Assignmet8 {
         byte byteA = 127;
         byte byteB = -128;
        byte ans = (byte)(byteA + byteB);
-        System.out.println(ans);
+       System.out.print();
+       System.out.println(ans);
     }
 }

@@ -1,7 +1,7 @@
 package Assignment9;
 
 public class Student {
-	private static int studentId = 550;
+	private static int studentId=550;
 	private char studentType;
 	private String studentName;
 	Student() {

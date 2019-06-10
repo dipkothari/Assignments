@@ -1,16 +1,16 @@
 package Assignment4;
 
- class Student {
+ class Students {
 	protected int studentId;
 	protected char studentType;
 	protected String studentName;
 	protected int semesterFees;
 	protected int feesPerMonth;
 	
-	Student(int studentId){
+	Students(int studentId){
 		this.studentId = studentId;
 	}
-	Student (int studentId, char studentType, String studName, int semFees){
+	Students (int studentId, char studentType, String studName, int semFees){
 		this(studentId);
 		this.studentType=studentType;
 		studentName = studName;
@@ -24,9 +24,9 @@ package Assignment4;
 	}
 
 }
- class DayScholar extends Student{
+ class DayScholars extends Students{
 	 private String residentialAddress;
-	 DayScholar(int studentId, char studentType, String studName,int semFees,String residentialAddress){
+	 DayScholars(int studentId, char studentType, String studName,int semFees,String residentialAddress){
 		 super(studentId, studentType,  studName,  semFees);
 		 this.residentialAddress=residentialAddress;
 	 }
@@ -37,7 +37,7 @@ package Assignment4;
  }
  class CourseReg{
 	 public static void main(String args[]) {
-		 DayScholar dayscholar = new DayScholar(1001,'D',"Eugene",12000,"N0 32/68 Vijaynagar");
+		 DayScholars dayscholar = new DayScholars(1001,'D',"Eugene",12000,"N0 32/68 Vijaynagar");
 		 dayscholar.displayDetails();
 	 }
  }

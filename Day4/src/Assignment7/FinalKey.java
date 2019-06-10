@@ -5,14 +5,14 @@ class Student{
 	protected int studentId;
 	protected char studentType;
 	protected String studentName;
-	protected final int semesterFees =12000;
+	protected final int SEMESTERFEES =12000;
 	protected double feesPerMonth;
 	
 	Student(){
 		
 	}
 	void calculateFee() {
-		feesPerMonth=semesterFees/6.0;
+		feesPerMonth=SEMESTERFEES/6.0;
 	}
 	
 	public void setStudentType(char sType) {

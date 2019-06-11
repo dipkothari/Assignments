@@ -16,7 +16,7 @@ public class Student {
 		this.residentialStatus = residentialStatus;
 	}
 	public void calculatesFees(double semesterFees) {
-		 feesPerMonth = semesterFees/6.0);
+		 feesPerMonth = (semesterFees/6.0);
 	}
 	public void calculatesFees(double semesterFees, double hosterlFees) {
 		this.feesPerMonth = semesterFees/6.0;

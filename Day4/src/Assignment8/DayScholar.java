@@ -1,4 +1,5 @@
-package Assignment3;
+package Assignment8;
+
 
 public class DayScholar extends Student {
 	private String residentialAddress;
@@ -10,7 +11,7 @@ public class DayScholar extends Student {
 		studentId = id;
 		studentType = type;
 		studentName = name;
-		this.feesPerMonth = fees;
+		calculateFees(fees);
 		residentialAddress= address;
 	}
 	public String getResidentialAddress() {
@@ -19,5 +20,8 @@ public class DayScholar extends Student {
 	public void displayStudentDetails() {
 		super.displayStudentDetails();
 		System.out.println("Residential Address : "+getResidentialAddress());
+	}
+	public void calculateFees(double semesterFees) {
+		this.feesPerMonth = semesterFees/6.0;
 	}
 }
